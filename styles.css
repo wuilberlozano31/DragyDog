@@ -1,0 +1,92 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    background: white;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: helvetica, arial;
+    margin: 0px;
+}
+h1{
+  color: black;
+}
+section {
+    min-height: 100%;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    grid-template-columns: 100%;
+
+}
+
+
+.title {
+  background: #FFE900;
+  text-align: justify;
+  font-size: 30px;
+}
+
+.grid-container>div {
+  padding: 1rem;
+}
+
+.grid-container>div:hover {
+  background: #CCCCCE;
+}
+
+.mostrar
+{
+  display: none;
+}
+
+#miCanvas
+{
+  position: absolute;
+}
+
+#porcentaje
+{
+  font-weight:bolder;
+  color:#000;
+  font-size:24px;
+  position: absolute;
+  z-index:10;
+}
+
+#wrapper
+{
+  display:none;
+}
+
+#main{
+  text-align: center;
+}
+
+.source, .container{
+  position: relative;
+  height: 300px;
+  width: 40%;
+  display: inline-block;
+  border: solid 2px;
+  background: #f7f7f7;
+  vertical-align: top;
+  transition: all 0.4s;
+}
+
+.container{
+  z-index: 100;
+}
+
+.over{
+  box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.4);
+  -webkit-transform: scale(1.1);
+}
+
+.circle{
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  background-color: black;
+  cursor: move;
+}
